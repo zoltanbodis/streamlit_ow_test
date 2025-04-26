@@ -21,7 +21,7 @@ def get_current_weather(city, unit, lang):
         st.error(f"Failed to fetch data: {response.status_code} - {response.text}")
 
 st.title("Robot Dreams Python - Weather Map & Data Visualization App")
-city = st.text_input("Enter city name").capitalize()
+city = st.text_input("Enter city name", value="Budapest").capitalize()
 
 st.header(f"Current weather in {city}")
 
